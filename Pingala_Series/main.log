@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.9)  3 OCT 2022 19:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.9.9)  3 OCT 2022 19:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/varunaditya/EE3900/Pingala Series/main"
-(/home/varunaditya/EE3900/Pingala Series/main.tex
+**/home/varunaditya/EE3900/Pingala_Series/main
+(/home/varunaditya/EE3900/Pingala_Series/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
@@ -691,10 +691,10 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 27
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-<figs/2_1.png, id=19, 462.528pt x 346.896pt>
-File: figs/2_1.png Graphic file (type png)
-<use figs/2_1.png>
-Package pdftex.def Info: figs/2_1.png  used on input line 308.
+<Figures/2_1.png, id=19, 462.528pt x 346.896pt>
+File: Figures/2_1.png Graphic file (type png)
+<use Figures/2_1.png>
+Package pdftex.def Info: Figures/2_1.png  used on input line 308.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 313--316
@@ -704,15 +704,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 313--316
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figs/2_1.png>]
+]
 Underfull \hbox (badness 1939) in paragraph at lines 342--344
 \OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 Down-load the Python code for
  []
 
-<figs/2_2.png, id=66, 462.528pt x 346.896pt>
-File: figs/2_2.png Graphic file (type png)
-<use figs/2_2.png>
-Package pdftex.def Info: figs/2_2.png  used on input line 353.
+<Figures/2_2.png, id=69, 462.528pt x 346.896pt>
+File: Figures/2_2.png Graphic file (type png)
+<use Figures/2_2.png>
+Package pdftex.def Info: Figures/2_2.png  used on input line 353.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 358--360
@@ -722,7 +722,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--360
 
 Underfull \vbox (badness 1292) has occurred while \output is active []
 
- [2 <./figs/2_2.png>]
+ [2 <./Figures/2_1.png> <./Figures/2_2.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3] [4
@@ -733,14 +733,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  16195 strings out of 478287
- 253596 string characters out of 5849290
- 807925 words of memory out of 5000000
+ 253648 string characters out of 5849290
+ 819925 words of memory out of 5000000
  34048 multiletter control sequences out of 15000+600000
  530612 words of font info for 150 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,10n,63p,270b,1571s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,10n,63p,268b,1571s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 114059 bytes).
+Output written on main.pdf (4 pages, 114334 bytes).
 PDF statistics:
  234 PDF objects out of 1000 (max. 8388607)
  198 compressed objects within 2 object streams
