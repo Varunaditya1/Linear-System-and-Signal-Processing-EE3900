@@ -1,6 +1,6 @@
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{setspace}
-\usepackage{gensymb}
+\usepackage{textcomp, gensymb}
 \usepackage{xcolor}
 \usepackage{caption}
 %\usepackage{subcaption}
@@ -199,25 +199,37 @@ columns=fullflexible
 This document contains the solution to Exercise 2.42 (b) of Oppenheim.
 \end{abstract}
 
-\problem Using the definition of linearity, show that the moving average system is linear.
+\begin{figure}[!htbp]
+    \includegraphics[width=\columnwidth]{Figures/Question_Fig.png}
+    \caption{Plot of the Figure}
+    \label{fig:Question_Fig}
+\end{figure}
 
-\solution The moving average system is given by
+\problem In the above diagram, find the frequency response of the system.
+
+\solution Taking the Fourier transform of h[n] from part (a), we get
 
 \begin{align}
-    y[n] = \frac{1}{M_1 + M_2 + 1}\sum_{k = -M_1}^{M_2}x[n - k]
-    \label{eq:mov-avg}
+    H(e^{j\omega}) = \sum_{n=-\infty}^{\infty} h[n] e^{-j\omega n} 
 \end{align}
-Hence, for inputs $x_1[n]$ and $x_2[n]$, we get
 \begin{align}
-    x_1[n] \system \frac{1}{M_1 + M_2 + 1}\sum_{k = -M_1}^{M_2}x_1[n - k] = y_1[n] \\
-    x_2[n] \system \frac{1}{M_1 + M_2 + 1}\sum_{k = -M_1}^{M_2}x_2[n - k] = y_2[n]
+    = \sum_{n=-\infty}^{\infty} \alpha^{n}u[n]e^{-j\omega n }+ \beta \sum_{n=-\infty}^{\infty} \alpha^{n-1}u[n-1]e^{-j\omega n }
+\end{align} 
+\begin{align} 
+     = \sum_{n=0}^{\infty} \alpha^{n}e^{-j\omega n }+ \beta \sum_{t=0}^{\infty} \alpha^{t-1}e^{-j\omega t }
 \end{align}
-and therefore, for any reals $a_1$ and $a_2$,
+
+    % y[n] = \frac{1}{M_1 + M_2 + 1}\sum_{k = -M_1}^{M_2}x[n - k]
+    % \label{eq:mov-avg}
+where we have used l=(n-1) in the second summation. Now, we can write the above equation as - 
 \begin{align}
-    &a_1x_1[n] + a_2x_2[n] \nonumber \\
-    &\system \frac{1}{M_1 + M_2 + 1}\sum_{k = -M_1}^{M_2}\brak{a_1x_1[n - k] + a_2x_2[n - k]} \\
-    &= a_1y_1[n] + a_2y_2[n]
+    H(e^{j\omega}) = \frac{1}{1-\alpha e^{-j\omega}}+\frac{\beta e^{-j\omega}}{1-\alpha e^{-j\omega}} 
 \end{align}
-Hence, the moving average system is linear.
+
+\begin{align}
+ = \frac{1+\beta e^{-j\omega}}{1-\alpha e^{-j\omega}}
+\end{align}
+Kindly note that the Fourier tranform of $\alpha^{n}$u[n] is well known, and the second term of h[n] (see part (a)) is just a scaled and shifted version of $\alpha^{n}$u[n]. So, we could have used the properties of the Fourier tranform to reduce the algebra.
+
 \end{document}
 
