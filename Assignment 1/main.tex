@@ -177,7 +177,7 @@ columns=fullflexible
 
 \title{Assignment - 1}
 
-\author{Gautam Singh} 
+\author{Varunaditya Singhal} 
 
 % make the title area
 \maketitle
@@ -196,28 +196,26 @@ columns=fullflexible
 \bigskip
 
 \begin{abstract}
-This document contains the solution to Exercise 2.23 (b) of Oppenheim.
+This document contains the solution to Exercise 3.43 (c) of Oppenheim.
 \end{abstract}
 
-\problem Using the definition of linearity, show that the moving average system is linear.
+\problem When the input to an LTI system is 
+\begin{align}
+x[n]=\left(\frac{1}{2}\right)^n u[n] + 2^n u[-n-1],
+\end{align}
+the output is given by 
+\begin{align}
+y[n]=6 \left(\frac{1}{2}\right)^n u[n]- 6 \left(\frac{3}{4}\right)^n u[n].
+\end{align}
+(c) Write the difference equation that charachterizes the equation.
 
-\solution The moving average system is given by
+\solution
+%  The moving average system is given by
 
 \begin{align}
-    y[n] = \frac{1}{M_1 + M_2 + 1}\sum_{k = -M_1}^{M_2}x[n - k]
-    \label{eq:mov-avg}
+    % y[n] = \frac{1}{M_1 + M_2 + 1}\sum_{k = -M_1}^{M_2}x[n - k]
+    % \label{eq:mov-avg}
+    y[n]-\frac{3}{4}y[n-1]= x[n]-2x[n-1]
 \end{align}
-Hence, for inputs $x_1[n]$ and $x_2[n]$, we get
-\begin{align}
-    x_1[n] \system \frac{1}{M_1 + M_2 + 1}\sum_{k = -M_1}^{M_2}x_1[n - k] = y_1[n] \\
-    x_2[n] \system \frac{1}{M_1 + M_2 + 1}\sum_{k = -M_1}^{M_2}x_2[n - k] = y_2[n]
-\end{align}
-and therefore, for any reals $a_1$ and $a_2$,
-\begin{align}
-    &a_1x_1[n] + a_2x_2[n] \nonumber \\
-    &\system \frac{1}{M_1 + M_2 + 1}\sum_{k = -M_1}^{M_2}\brak{a_1x_1[n - k] + a_2x_2[n - k]} \\
-    &= a_1y_1[n] + a_2y_2[n]
-\end{align}
-Hence, the moving average system is linear.
 \end{document}
 
