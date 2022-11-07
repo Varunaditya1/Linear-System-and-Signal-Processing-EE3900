@@ -1,6 +1,6 @@
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{setspace}
-\usepackage{gensymb}
+\usepackage{textcomp, gensymb}
 \usepackage{xcolor}
 \usepackage{caption}
 %\usepackage{subcaption}
@@ -145,7 +145,7 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{5 V Charger Using a Low Pass Filter}
-\author{Gautam Singh}
+\author{Varunaditya Singhal}
 \maketitle
 \tableofcontents
 \renewcommand{\thetable}{\theenumi}
@@ -201,10 +201,16 @@ where $V_p$ is the peak voltage. Thus, we obtain an almost
 constant supply of 5 V DC to charge a mobile phone.
 
 \section{Results}
+The screenshot of the voltage of the charger with Volt-meter.
+\begin{figure}[!htb]
+    \includegraphics[width=\columnwidth]{figs/voltmeter.jpeg}
+    \caption{Screenshot of the voltage of the charger with Volt-meter.}
+    \label{fig:voltmeter}
+\end{figure}
 The screenshots of the waveforms at each stage are shown ahead.
 
 \begin{figure}[!ht]
-    \includegraphics[width=\columnwidth]{figs/transformer.jpg}
+    \includegraphics[width=\columnwidth]{figs/transformer.jpeg}
     \caption{Output AC waveform at transformer stage across T\textsubscript{1}T\textsubscript{0} (18 V peak).}
     \label{fig:transformer}
 \end{figure}
